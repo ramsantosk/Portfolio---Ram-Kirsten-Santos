@@ -310,25 +310,48 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="panel">
-      <div class="panel-grid">
-        <div class="panel-left">
-          <h2>Contact</h2>
-          <p class="muted">Want my full CV or to collaborate? Send a message or use the contact details.</p>
-          <p><strong>Email:</strong> <a href="mailto:ramkirstensantos@gmail.com">ramkirstensantos@gmail.com</a></p>
-          <p><strong>Phone:</strong> 0995-735-3245</p>
+<section id="contact" class="panel contact-panel">
+  <div class="panel-grid contact-grid">
+
+    <div class="panel-left contact-info">
+      <h2>Contact</h2>
+      <p class="muted">Want my full CV or to collaborate? Send a message or use the contact info below.</p>
+
+      <div class="contact-card">
+        <p><strong>Email:</strong><br>
+          <a href="mailto:ramkirstensantos@gmail.com">ramkirstensantos@gmail.com</a>
+        </p>
+
+        <p><strong>Phone:</strong><br>
+          0995-735-3245
+        </p>
+      </div>
+    </div>
+
+    <div class="panel-right">
+      <form class="contact-form"
+        onsubmit="event.preventDefault(); alert('Demo: message sent'); this.reset();">
+
+        <div class="input-group">
+          <input name="name" placeholder="Your name" required>
         </div>
 
-        <div class="panel-right">
-          <form class="contact-form" onsubmit="event.preventDefault(); alert('Demo: message sent'); this.reset();">
-            <input name="name" placeholder="Your name" required>
-            <input name="email" type="email" placeholder="Email address" required>
-            <textarea name="message" rows="5" placeholder="Message"></textarea>
-            <button class="btn primary" type="submit">Send Message</button>
-          </form>
+        <div class="input-group">
+          <input name="email" type="email" placeholder="Email address" required>
         </div>
-      </div>
-    </section>
+
+        <div class="input-group">
+          <textarea name="message" rows="6" placeholder="Message"></textarea>
+        </div>
+
+        <button class="btn primary w-full" type="submit">Send Message</button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
 
     <footer class="footer">
       <div>© <span id="year3"></span> Ram Kirsten B. Santos</div>
