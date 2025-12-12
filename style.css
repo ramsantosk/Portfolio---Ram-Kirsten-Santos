@@ -405,6 +405,83 @@ copyright { font-size: 13px; color: var(--muted); }
    position: relative;
    margin-bottom: 50px;
 }
+/* -----------------------------------
+   CONTACT PANEL UI
+----------------------------------- */
+
+.contact-panel {
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,1));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 64px 8%;
+}
+
+.contact-grid {
+  align-items: start;
+}
+
+.contact-info h2 {
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.contact-card {
+  margin-top: 20px;
+  padding: 18px 20px;
+  background: var(--panel);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.contact-card a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* FORM STYLING */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(17,32,51,0.10);
+  background: var(--panel);
+  font-size: 15px;
+  box-shadow: 0 4px 14px rgba(17,32,51,0.05);
+  transition: border .2s, box-shadow .2s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 0 3px rgba(167,199,231,0.35);
+}
+/* CONTACT PANEL BACKGROUND (light blue gradient) */
+.contact-panel {
+  background: linear-gradient(180deg, #F3F8FF 0%, #F7FAFF 100%);
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width:800px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* -----------------------------------
    RESPONSIVE
